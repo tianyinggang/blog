@@ -55,7 +55,7 @@ const ProjectSection: React.FC = () => {
       <div className="others text-center mb-16">
         Other projects can be explored in{" "}
         <a
-          href="https://github.com/satnaing"
+          href="https://github.com/tianyinggang"
           className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
         >
           my github profile
@@ -81,7 +81,7 @@ const projects = [
     desc: "A minimal, accessible and SEO-friendly Astro blog theme. One of the most starred blog templates built with Astro.",
     tags: ["Astro", "TypeScript", "React", "TailwindCSS"],
     liveUrl: "https://astro-paper.pages.dev/",
-    codeUrl: "https://github.com/satnaing/astro-paper",
+    codeUrl: "https://github.com/tianyinggang/astro-paper",
     bgColor: "bg-[#9FD0E3]",
     githubApi: "https://api.github.com/repos/satnaing/astro-paper",
   },
@@ -100,7 +100,7 @@ const projects = [
     desc: "My portfolio website in terminal version developed with React and TypeScript. ",
     tags: ["React", "TypeScript", "Styled-Components"],
     liveUrl: "https://terminal.satnaing.dev/",
-    codeUrl: "https://github.com/satnaing/terminal-portfolio",
+    codeUrl: "https://github.com/tianyinggang/terminal-portfolio",
     bgColor: "bg-[#B4BEE0]",
     githubApi: "https://api.github.com/repos/satnaing/terminal-portfolio",
   },
@@ -119,7 +119,7 @@ const projects = [
     desc: "An ecommerce web application where users can browse various products, add to wishlist, add to cart, and make purchase. Available in English and Burmese languages.",
     tags: ["NextJS", "TypeScript", "TailwindCSS", "ContextAPI"],
     liveUrl: "https://haru-fashion.vercel.app/",
-    codeUrl: "https://github.com/satnaing/haru-fashion",
+    codeUrl: "https://github.com/tianyinggang/haru-fashion",
     bgColor: "bg-[#A6CECE]",
     githubApi: "https://api.github.com/repos/satnaing/haru-fashion",
   },
@@ -138,7 +138,7 @@ const projects = [
     desc: "A RESTful API developed for Haru fashion ecommerce project. Include CRUD operations, authentication, authorization, forgot/reset password and full-text search.",
     tags: ["ExpressJS", "TypeScript", "PostgreSQL", "Prisma"],
     liveUrl: "https://satnaing.github.io/haru-api/",
-    codeUrl: "https://github.com/satnaing/haru-api",
+    codeUrl: "https://github.com/tianyinggang/haru-api",
     bgColor: "bg-[#C5E4E7]",
     githubApi: "https://api.github.com/repos/satnaing/haru-api",
   },
@@ -157,7 +157,7 @@ const projects = [
     desc: "An online bookstore developed using NextJS 13 with appDir and StrapiCMS.",
     tags: ["NextJS", "Radix UI ", "TailwindCSS", "TanstackQuery", "StrapiCMS"],
     liveUrl: "https://nextbookstore.vercel.app/",
-    codeUrl: "https://github.com/satnaing/next-bookstore",
+    codeUrl: "https://github.com/tianyinggang/next-bookstore",
     bgColor: "bg-[#EBF4F4]",
     githubApi: "https://api.github.com/repos/satnaing/next-bookstore",
   },
@@ -176,7 +176,7 @@ const projects = [
     desc: "Admin Dashboard UI built with Shadcn and Vite. Built with responsiveness and accessibility in mind.",
     tags: ["ShadcnUI", "Vite", "React Router", "TypeScript"],
     liveUrl: "https://shadcn-admin.netlify.app/",
-    codeUrl: "https://github.com/satnaing/shadcn-admin",
+    codeUrl: "https://github.com/tianyinggang/shadcn-admin",
     bgColor: "bg-[#FBFBFB]",
     githubApi: "https://api.github.com/repos/satnaing/shadcn-admin",
   },

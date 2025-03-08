@@ -1,6 +1,6 @@
 {
-  "name": "satnaing.dev",
-  "version": "2.3.0",
+  "name": "Felix",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -41,21 +41,20 @@ const BlogHeroSection: React.FC = () => {
       <div className="mt-10">
         <div className="overflow-hidden py-1">
           <h1 className="main-header text-4xl lg:text-5xl font-bold">
-            Sat Naing's{" "}
+            Felix's{" "}
             <span className="text-marrsgreen dark:text-carrigreen">Blog</span>
           </h1>
         </div>
         <div>
           <p className="intro-1 mt-4 mb-2">
-            Hello, everyone! Welcome to my personal blog.
+          Welcome to My Blog! 👋
           </p>
           <p className="intro-2">
-            In this blog, I will be writing about my projects (what I do/how I
-            did), my personal experiences, and some random stuffs.
+          Hey there! I'm excited to share my journey with you. Here, you'll find posts about my projects—what I build, how I build them, and the lessons I learn along the way. I'll also be sharing personal experiences, insights, and the occasional random thoughts.
           </p>
           <p className="intro-3">
             You can follow me on my social media and{" "}
-            <a href="https://github.com/satnaing" className="link">
+            <a href="https://github.com/tianyinggang" className="link">
               Github account.
             </a>
             <svg

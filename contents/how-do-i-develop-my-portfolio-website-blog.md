@@ -7,7 +7,7 @@ tags:
   - TailwindCSS
   - HeadlessCMS
   - Blog
-author: Sat Naing
+author: Felix
 type: article
 coverImage: https://res.cloudinary.com/noezectz/image/upload/v1653050141/SatNaing/blog_at_cafe_ei1wf4.jpg
 coverImageAlt: Macbook at a cafe
@@ -61,7 +61,7 @@ The following are certain features of my portfolio and blog
 
 The entire project is developed with SEO focus in mind. I've used proper meta tags, descriptions and heading alignments. This website is now indexed by Google.
 
-> You can search this website on google by using keywords like 'sat naing dev'
+> You can search this website on google by using keywords like 'Felix dev'
 
 ![searching satnaing.dev on google](https://res.cloudinary.com/noezectz/image/upload/v1648231400/SatNaing/satnaing-on-google_asflq6.png "satnaing.dev is indexed")
 
@@ -107,4 +107,4 @@ And... last but not least, I would like to say 'thanks' to my friend [Swann Fevi
 
 - Website: [https://satnaing.dev/](https://satnaing.dev/ "https://satnaing.dev/")
 - Blog: [https://satnaing.dev/blog](https://satnaing.dev/blog "https://satnaing.dev/blog")
-- Repo: [https://github.com/satnaing/my-portfolio](https://github.com/satnaing/my-portfolio "https://github.com/satnaing/my-portfolio")
+- Repo: [https://github.com/tianyinggang/my-portfolio](https://github.com/tianyinggang/my-portfolio "https://github.com/tianyinggang/my-portfolio")

@@ -1,4 +1,4 @@
-# Sat Naing Portfolio & Blog
+# Felix Portfolio & Blog
 
 ![satnaing-portfolio-and-blog](https://user-images.githubusercontent.com/53733092/169645862-d1dda9cb-482f-4428-a63c-8eaf6910ab35.png)
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue) ![vercel](https://img.shields.io/github/deployments/satnaing/my-portfolio/production?label=vercel&logo=vercel&logoColor=white)
@@ -29,7 +29,7 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 
 <p align="center">
   <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fsatnaing.dev%2F&form_factor=desktop">
-    <img width="710" alt="Sat Naing Portfolio Website Lighthouse Score" src="public/lighthouse-result.svg">
+    <img width="710" alt="Felix Portfolio Website Lighthouse Score" src="public/lighthouse-result.svg">
   <a>
 </p>
 
@@ -38,7 +38,7 @@ My portfolio & blog website developed with Next.JS(SSG) and TypeScript. Tailwind
 Clone the project
 
 ```bash
-git clone https://github.com/satnaing/satnaing.dev.git
+git clone https://github.com/tianyinggang/satnaing.dev.git
 ```
 
 Go to the project directory

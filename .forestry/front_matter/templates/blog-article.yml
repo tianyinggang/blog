@@ -95,11 +95,11 @@ fields:
   description: Tags for the post
 - name: author
   type: select
-  default: Sat Naing
+  default: Felix
   config:
     required: true
     options:
-    - Sat Naing
+    - Felix
     source:
       type: simple
       section: 

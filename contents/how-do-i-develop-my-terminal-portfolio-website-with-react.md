@@ -8,13 +8,13 @@ tags:
   - ContextAPI
   - Styled-Components
   - TypeScript
-author: Sat Naing
+author: Felix
 type: article
 coverImage: https://res.cloudinary.com/noezectz/image/upload/v1654754125/SatNaing/terminal-screenshot_gu3kkc.png
 coverImageAlt: Screenshot of Terminal Portfolio Website
 title: How Do I Develop My Terminal Portfolio Website with React
 description:
-  Sat Naing's React terminal portfolio website. Styled-components is used
+  Felix's React terminal portfolio website. Styled-components is used
   for styling; and multiple themes supported.
 excerpt:
   Developing a terminal-like website using ReactJS, TypeScript and Styled-Components.
@@ -87,4 +87,4 @@ This is a really fun project, and one special part of this project is I had to f
 ## Project Links
 
 - Website: [https://terminal.satnaing.dev/](https://terminal.satnaing.dev/ "https://terminal.satnaing.dev/")
-- Repo: [https://github.com/satnaing/terminal-portfolio](https://github.com/satnaing/terminal-portfolio "https://github.com/satnaing/terminal-portfolio")
+- Repo: [https://github.com/tianyinggang/terminal-portfolio](https://github.com/tianyinggang/terminal-portfolio "https://github.com/tianyinggang/terminal-portfolio")
