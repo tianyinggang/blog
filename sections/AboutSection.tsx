@@ -169,11 +169,7 @@ const AboutSection: React.FC = () => {
             </div>
 
             <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 4+ years of comprehensive experience in web application
-              development, I have polished my skills in both frontend and
-              backend development. In addition to my hands-on experience in web
-              development, my education has also played a critical role in
-              providing a strong foundation for my career.
+              With 4+ years of experience in embedded systems and AI, I have honed my skills in both low-level programming and intelligent systems 🛠️. In addition to my hands-on experience in automotive embedded development, my education in Artificial Intelligence and Communication Engineering has provided a solid foundation for my career 🚀.
             </p>
 
             <div
@@ -197,10 +193,10 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "B.Sc (Hons) in Computing",
-    subTitle: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "Master of Artificial Intelligence",
+    subTitle: "Monash University | 2024 ~ 2026",
     list: [
-      "Studied computer science, software development, DevOps",
+      "Studied Deep Learning, Machine Learning, Computer Vision, and Natural Language Processing",
       "Graduated with First Class Honours",
       "Got merit in 7 modules out of 9",
     ],
@@ -216,7 +212,7 @@ const educationInfo = [
   },
   {
     id: 3,
-    title: "IELTS",
+    title: "PTE",
     subTitle: "British Council Myanmar | 2017",
     list: ["Got overall band score 6.5."],
   },

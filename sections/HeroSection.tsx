@@ -134,14 +134,16 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="mt-2 my-4 md:mb-8">
           <p className="mb-1">
-            I am a Full-Stack Developer with a passion for delivering
-            exceptional results.
+            I am an AI and Embedded Systems Engineer with a passion for building innovative solutions 🚀.
           </p>
           <p>
-            With my expertise in React and NextJS on the frontend, and PHP,
-            CodeIgniter, NodeJS, and Express on the backend, I bring a unique
-            combination of technical skills and creative problem-solving to
-            every project I work on.
+            In this blog, I’ll be sharing my projects (what I do/how I did), personal experiences, and tech insights 🛠️.
+          </p>
+          <p>
+            With expertise in Next.js, TailwindCSS, Python, Embedded Linux, and C, I combine software and hardware skills to tackle complex challenges 💡.
+          </p>
+          <p>
+            Follow me on social media & GitHub to stay updated on my latest work! 🎯😃
           </p>
         </div>
         <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>

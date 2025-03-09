@@ -19,20 +19,19 @@ module.exports = {
     extend: {
       colors: {
         bglight: "#F9FAFB",
-        marrslight: "#1C9A9A",
-        marrsgreen: "#007A7A",
-        marrsdark: "#004D4D",
-        cardlight: "#EFF3F3",
-
-        // bgdark: "#2D2D2D",
-        bgdark: "#1D2A35",
-        carrilight: "#57DCB4",
-        carrigreen: "#05CE91",
-        carridark: "#00835B",
-        // carddark: "#383838",
-        carddark: "#22323F",
-        textlight: "#F9FAFB",
+        marrslight: "#0097D2",  // Monash Light Blue
+        marrsgreen: "#00A499",  // Monash Teal
+        marrsdark: "#003B5C",   // Monash Dark Blue
+        cardlight: "#E6E7E8",   // Monash Light Grey
+      
+        bgdark: "#003B5C",      // Monash Dark Blue
+        carrilight: "#8DC63F",  // Monash Green
+        carrigreen: "#00A499",  // Monash Teal
+        carridark: "#006DAE",   // Monash Blue
+        carddark: "#003B5C",    // Monash Dark Blue
+        textlight: "#F9FAFB",   // 维持原有亮色文字
       },
+      
     },
   },
   plugins: [
