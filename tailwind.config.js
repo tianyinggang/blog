@@ -18,18 +18,27 @@ module.exports = {
     },
     extend: {
       colors: {
-        bglight: "#F9FAFB",    // 浅色模式背景不变
-        marrslight: "#0097D2", // 绿色 → Monash Light Blue（较亮的蓝）
-        marrsgreen: "#00A499", // 绿色 → Monash Teal（适合作强调色）
-        marrsdark: "#003B5C",  // 深绿 → Monash Dark Blue（用于暗色模式）
-        cardlight: "#E6E7E8",  // 绿色背景 → Monash Light Grey
-      
-        bgdark: "#003B5C",     // 深色背景 → Monash Dark Blue
-        carrilight: "#0097D2", // 绿色亮色 → Monash Light Blue
-        carrigreen: "#00A499", // 绿色主色 → Monash Teal
-        carridark: "#006DAE",  // 深绿色 → Monash Blue（主色）
-        carddark: "#003B5C",   // 绿色卡片背景 → Monash Dark Blue
-        textlight: "#F9FAFB",  // 维持亮色字体
+     // 基础背景
+     bglight: "#F6F6F6",    // 浅灰
+     bgdark: "#000000",     // 纯黑
+     
+     // 品牌主色系
+     marrslight: "#00739d", // 辅助蓝
+     marrsgreen: "#006DAE",  // Monash主蓝
+     marrsdark: "#3c3c3c",  // 深灰
+     
+     // 卡片系统
+     cardlight: "#FFFFFF",  // 纯白
+     carddark: "#505050",   // 中灰
+     
+     // 功能色
+     carrilight: "#F6F6F6", // 浅灰
+     carrigreen: "#00739d", // 辅助蓝
+     carridark: "#3c3c3c",  // 深灰
+     
+     // 文字系统
+     textlight: "#3c3c3c",  // 深灰
+     textdark: "#F6F6F6"   // 浅灰
       },      
       
     },
