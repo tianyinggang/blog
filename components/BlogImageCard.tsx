@@ -72,7 +72,7 @@ const BlogImageCard: React.FC<Props> = ({
           <Link
             href={`/blog/posts/${slug}`}
             className="blog-title link inline-block outline-none dark:outline-none focus-within:underline"
-            legacyBehavior>
+            >
             <h3
               className={`${
                 fullWH ? "text-lg sm:text-md" : "text-md"

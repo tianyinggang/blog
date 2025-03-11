@@ -26,7 +26,7 @@ const BlogCardBox: React.FC<Props> = ({
       } ${className}`}
     >
       <div className="mb-2">
-        <Link href={`/blog/posts/${slug}`} className="link inline-block" legacyBehavior>
+        <Link href={`/blog/posts/${slug}`} className="link inline-block" >
           <h3
             className={`${
               fullWH ? "text-lg sm:text-md" : "text-md"
