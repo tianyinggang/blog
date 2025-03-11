@@ -1,16 +1,16 @@
-import { GetServerSideProps } from "next";
-import { getAllPosts } from "src/utils/api";
-import slugify from "src/utils/slugify";
+import { MetadataRoute } from 'next/server';
+import { getAllPosts } from 'src/utils/api'; // Import getAllPosts
+import slugify from 'src/utils/slugify';     // Import slugify
 
-type Data = {
+type Data = { // Re-define Data type
   slugs: (string | string[])[];
   tags: string[];
   categories: (string | string[])[];
 };
 
-const generateSiteMap = ({ slugs, categories, tags }: Data) => {
+const generateSiteMap = ({ slugs, categories, tags }: Data) => { // Keep generateSiteMap function
   return `<?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
         <loc>${process.env.NEXT_PUBLIC_URL}</loc>
       </url>
@@ -27,7 +27,7 @@ const generateSiteMap = ({ slugs, categories, tags }: Data) => {
         .map((category) => {
           return `
         <url>
-        <loc>${process.env.NEXT_PUBLIC_URL}/blog/categories/${category}</loc>
+        <loc><span class="math-inline">\{process\.env\.NEXT\_PUBLIC\_URL\}/blog/categories/</span>{category}</loc>
         </url>
       `;
         })
@@ -36,32 +36,28 @@ const generateSiteMap = ({ slugs, categories, tags }: Data) => {
         .map((tag) => {
           return `
         <url>
-        <loc>${process.env.NEXT_PUBLIC_URL}/blog/tags/${tag}</loc>
+        <loc><span class="math-inline">\{process\.env\.NEXT\_PUBLIC\_URL\}/blog/tags/</span>{tag}</loc>
         </url>
       `;
         })
         .join("")}
-      
+
       ${slugs
         .map((slug) => {
           return `
         <url>
-        <loc>${process.env.NEXT_PUBLIC_URL}/blog/posts/${slug}</loc>
+        <loc><span class="math-inline">\{process\.env\.NEXT\_PUBLIC\_URL\}/blog/posts/</span>{slug}</loc>
         </url>
       `;
         })
         .join("")}
-   </urlset>
- `;
+    </urlset>
+  `;
 };
 
-function SiteMap() {
-  // getServerSideProps will do the heavy lifting
-}
-
-export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+export async function GET(): Promise<Response> { // Export async GET function
   // Retrieve slugs tags and category from contents folder
-  const posts = getAllPosts(["slug", "tags", "category"]);
+  const posts = await getAllPosts(["slug", "tags", "category"]); // Use getAllPosts
 
   // Generate unique categories and store it in array
   const categories = posts
@@ -80,19 +76,14 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     encodeURIComponent((post.slug as string).trim())
   );
 
-  const data = { slugs, tags, categories };
+  const data = { slugs, tags, categories }; // Create data object
 
   // Generate the XML sitemap with the posts data
-  const sitemap = generateSiteMap(data);
+  const sitemap = generateSiteMap(data); // Generate sitemap XML
 
-  res.setHeader("Content-Type", "text/xml");
-  // Send the XML to the browser
-  res.write(sitemap);
-  res.end();
-
-  return {
-    props: {},
-  };
-};
-
-export default SiteMap;
+  return new Response(sitemap, { // Return Response object
+    headers: {
+      'Content-Type': 'application/xml',
+    },
+  });
+}
