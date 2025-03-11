@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next/server';
-import { getAllPosts } from 'src/utils/api'; // Import getAllPosts
-import slugify from 'src/utils/slugify';     // Import slugify
+import { getAllPosts } from '@utils/api'; // Import getAllPosts
+import slugify from '@utils/slugify';     // Import slugify
 
 type Data = { // Re-define Data type
   slugs: (string | string[])[];

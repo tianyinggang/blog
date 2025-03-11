@@ -2,17 +2,17 @@
 
 import type { NextPage } from "next";
 
-import AppHead from "src/components/AppHead";
-import Loader from "src/components/Loader";
-import SkipToMain from "src/components/SkipToMain";
-import Header from "src/components/Header";
-import SocialLinks from "src/components/SocialLinks";
-import HeroSection from "@/components/sections/HeroSection";
-import AboutSection from "@/components/sections/AboutSection";
-import ProjectSection from "@/components/sections/ProjectSection";
-import BlogSection from "@/components/sections/BlogSection";
-import ContactSection from "@/components/sections/ContactSection";
-import Footer from "src/components/Footer";
+import AppHead from "@components/AppHead";
+import Loader from "@components/Loader";
+import SkipToMain from "@components/SkipToMain";
+import Header from "@components/Header";
+import SocialLinks from "@components/SocialLinks";
+import HeroSection from "@components/sections/HeroSection";
+import AboutSection from "@components/sections/AboutSection";
+import ProjectSection from "@components/sections/ProjectSection";
+import BlogSection from "@components/sections/BlogSection";
+import ContactSection from "@components/sections/ContactSection";
+import Footer from "@components/Footer";
 
 import { MdxMeta } from "./blog/posts/[slug]";
 

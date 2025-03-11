@@ -1,5 +1,5 @@
 import Link from "next/link";
-import slugify from "src/utils/slugify";
+import slugify from "@utils/slugify";
 
 type Props = {
   category: string;

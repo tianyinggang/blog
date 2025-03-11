@@ -3,17 +3,17 @@ import Script from "next/script";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useTheme } from "next-themes";
 
-import BlogHeader from "src/components/blog/BlogHeader";
-import SkipToMain from "src/components/SkipToMain";
-import SocialLinks from "src/components/SocialLinks";
-import AppHead, { Meta } from "src/components/AppHead";
-import Footer from "src/components/Footer";
-import markdownToHtml from "src/utils/markdownToHtml";
-import { getAllPosts, getPostBySlug } from "src/utils/api";
-import PostBody from "src/components/blog/PostBody";
-import Tag from "src/components/blog/Tag";
-import DateTime from "src/components/DateTime";
-import HeadCategory from "src/components/blog/HeadCategory";
+import BlogHeader from "@components/blog/BlogHeader";
+import SkipToMain from "@components/SkipToMain";
+import SocialLinks from "@components/SocialLinks";
+import AppHead, { Meta } from "@components/AppHead";
+import Footer from "@components/Footer";
+import markdownToHtml from "@utils/markdownToHtml";
+import { getAllPosts, getPostBySlug } from "@utils/api";
+import PostBody from "@components/blog/PostBody";
+import Tag from "@components/blog/Tag";
+import DateTime from "@components/DateTime";
+import HeadCategory from "@components/blog/HeadCategory";
 
 export interface MdxMeta extends Meta {
   title: string;

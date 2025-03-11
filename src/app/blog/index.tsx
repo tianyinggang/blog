@@ -1,16 +1,16 @@
 import type { GetStaticProps, NextPage } from "next";
 import { MdxMeta } from "./posts/[slug]";
 
-import AppHead from "src/components/AppHead";
-import BlogHeroSection from "@/components/sections/BlogHeroSection";
-import SkipToMain from "src/components/SkipToMain";
-import SocialLinks from "src/components/SocialLinks";
-import BlogHeader from "src/components/blog/BlogHeader";
-import BlogCard from "src/components/BlogCard";
-import Footer from "src/components/Footer";
-import { getAllPosts } from "src/utils/api";
-import { useFilter } from "src/context/filter";
-import Loader from "src/components/Loader";
+import AppHead from "@components/AppHead";
+import BlogHeroSection from "@components/sections/BlogHeroSection";
+import SkipToMain from "@components/SkipToMain";
+import SocialLinks from "@components/SocialLinks";
+import BlogHeader from "@components/blog/BlogHeader";
+import BlogCard from "@components/BlogCard";
+import Footer from "@components/Footer";
+import { getAllPosts } from "@utils/api";
+import { useFilter } from "@context/filter";
+import Loader from "@components/Loader";
 
 type Props = {
   posts: MdxMeta[];

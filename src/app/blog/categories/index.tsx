@@ -3,15 +3,15 @@ import type { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 import gsap from "gsap";
 
-import AppHead from "src/components/AppHead";
-import SkipToMain from "src/components/SkipToMain";
-import SocialLinks from "src/components/SocialLinks";
-import BlogHeader from "src/components/blog/BlogHeader";
-import BlogCardBox from "src/components/BlogCardBox";
-import Footer from "src/components/Footer";
-import Loader from "src/components/Loader";
-import { getAllPosts } from "src/utils/api";
-import slugify from "src/utils/slugify";
+import AppHead from "@components/AppHead";
+import SkipToMain from "@components/SkipToMain";
+import SocialLinks from "@components/SocialLinks";
+import BlogHeader from "@components/blog/BlogHeader";
+import BlogCardBox from "@components/BlogCardBox";
+import Footer from "@components/Footer";
+import Loader from "@components/Loader";
+import { getAllPosts } from "@utils/api";
+import slugify from "@utils/slugify";
 import { MdxMeta } from "../posts/[slug]";
 
 type CategorizedPosts = {

@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 
-import AppHead from "src/components/AppHead";
-import Footer from "src/components/Footer";
-import LinkButton from "src/components/LinkButton";
+import AppHead from "@components/AppHead";
+import Footer from "@components/Footer";
+import LinkButton from "@components/LinkButton";
 
 import { meta } from "src/app/home-page";
 import Link from "next/link";

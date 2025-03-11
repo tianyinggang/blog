@@ -3,11 +3,11 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 //import { RoughNotation } from "react-rough-notation";
 
-import { useSection } from "src/context/section";
-import useOnScreen from "src/hooks/useOnScreen";
-import useScrollActive from "src/hooks/useScrollActive";
+import { useSection } from "@context/section";
+import useOnScreen from "@hooks/useOnScreen";
+import useScrollActive from "@hooks/useScrollActive";
 import { MdxMeta } from "src/app/blog/posts/[slug]";
-import BlogImageCard from "src/components/BlogImageCard";
+import BlogImageCard from "@components/BlogImageCard";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

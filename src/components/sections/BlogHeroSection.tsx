@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { LanguageType, useFilter } from "src/context/filter";
+import { LanguageType, useFilter } from "@context/filter";
 
 const BlogHeroSection: React.FC = () => {
   const { searchText, onSearch, postLanguage, onLanguageChange } = useFilter();

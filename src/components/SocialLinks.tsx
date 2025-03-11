@@ -1,4 +1,4 @@
-import { useSection } from "src/context/section";
+import { useSection } from "@context/section";
 
 const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
   const { currentSection } = useSection();

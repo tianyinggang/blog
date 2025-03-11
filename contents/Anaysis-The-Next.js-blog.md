@@ -1,0 +1,19 @@
+-rw-r--r--@  1 evo  staff   2.5K Mar  8 22:37 CHANGELOG.md
+-rw-r--r--@  1 evo  staff    23B Mar  8 22:37 LEARN.md
+-rw-r--r--@  1 evo  staff   2.4K Mar  8 22:37 README.md
+drwxr-xr-x@ 19 evo  staff   608B Mar  8 22:37 components/
+drwxr-xr-x@  7 evo  staff   224B Mar 10 08:08 contents/
+drwxr-xr-x@  4 evo  staff   128B Mar  8 22:37 context/
+drwxr-xr-x@  5 evo  staff   160B Mar  8 22:37 hooks/
+-rw-r--r--@  1 evo  staff   201B Mar  8 22:37 next-env.d.ts
+-rw-r--r--@  1 evo  staff   611B Mar  8 22:37 next.config.js
+-rw-r--r--@  1 evo  staff   465K Mar  8 22:37 package-lock.json
+-rw-r--r--@  1 evo  staff   973B Mar  8 22:37 package.json
+drwxr-xr-x@  9 evo  staff   288B Mar  8 22:37 pages/
+-rw-r--r--@  1 evo  staff    83B Mar  8 22:37 postcss.config.js
+drwxr-xr-x@ 13 evo  staff   416B Mar  8 22:37 public/ //all some images
+drwxr-xr-x@  8 evo  staff   256B Mar  8 22:37 sections/
+drwxr-xr-x@  3 evo  staff    96B Mar  8 22:37 styles/
+-rw-r--r--@  1 evo  staff   1.3K Mar  9 21:39 tailwind.config.js
+-rw-r--r--@  1 evo  staff   630B Mar  8 22:37 tsconfig.json
+drwxr-xr-x@  5 evo  staff   160B Mar  8 22:37 utils/

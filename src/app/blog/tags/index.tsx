@@ -2,14 +2,14 @@ import type { GetStaticProps, NextPage } from "next";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-import AppHead from "src/components/AppHead";
-import SkipToMain from "src/components/SkipToMain";
-import SocialLinks from "src/components/SocialLinks";
-import BlogHeader from "src/components/blog/BlogHeader";
-import Tag from "src/components/blog/Tag";
-import Footer from "src/components/Footer";
-import { getAllPosts } from "src/utils/api";
-import Loader from "src/components/Loader";
+import AppHead from "@components/AppHead";
+import SkipToMain from "@components/SkipToMain";
+import SocialLinks from "@components/SocialLinks";
+import BlogHeader from "@components/blog/BlogHeader";
+import Tag from "@components/blog/Tag";
+import Footer from "@components/Footer";
+import { getAllPosts } from "@utils/api";
+import Loader from "@components/Loader";
 
 type Props = {
   tags: string[];

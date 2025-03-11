@@ -2,10 +2,10 @@ import { useEffect, useRef } from "react";
 //import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
 
-import LinkButton from "src/components/LinkButton";
-import { useSection } from "src/context/section";
-import useOnScreen from "src/hooks/useOnScreen";
-import useScrollActive from "src/hooks/useScrollActive";
+import LinkButton from "@components/LinkButton";
+import { useSection } from "@context/section";
+import useOnScreen from "@hooks/useOnScreen";
+import useScrollActive from "@hooks/useScrollActive";
 
 const ContactSection: React.FC = () => {
   const { theme } = useTheme();

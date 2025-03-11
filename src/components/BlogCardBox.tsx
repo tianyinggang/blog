@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import DateTime from "src/components/DateTime";
+import DateTime from "@components/DateTime";
 
 type Props = {
   post: {

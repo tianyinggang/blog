@@ -3,17 +3,17 @@ import { useEffect, useRef } from "react";
 //import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
 
-import ProjectCard from "src/components/ProjectCard";
-import { useSection } from "src/context/section";
-import useOnScreen from "src/hooks/useOnScreen";
-import useScrollActive from "src/hooks/useScrollActive";
+import ProjectCard from "@components/ProjectCard";
+import { useSection } from "@context/section";
+import useOnScreen from "@hooks/useOnScreen";
+import useScrollActive from "@hooks/useScrollActive";
 
-import terminalPortfolio from "public/projects/terminal-portfolio.webp";
-import haruFashion from "public/projects/haru-fashion.webp";
-import haruApi from "public/projects/haru-api.webp";
-import astroPaper from "public/projects/astro-paper.webp";
-import nextBookstore from "public/projects/next-bookstore.webp";
-import shadcnAdmin from "public/projects/shadcn-admin.webp";
+import terminalPortfolio from "@public/projects/terminal-portfolio.webp";
+import haruFashion from "@public/projects/haru-fashion.webp";
+import haruApi from "@public/projects/haru-api.webp";
+import astroPaper from "@public/projects/astro-paper.webp";
+import nextBookstore from "@public/projects/next-bookstore.webp";
+import shadcnAdmin from "@public/projects/shadcn-admin.webp";
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();

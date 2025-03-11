@@ -5,13 +5,13 @@ import { useTheme } from "next-themes";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { useSection } from "src/context/section";
-import useOnScreen from "src/hooks/useOnScreen";
-import useScrollActive from "src/hooks/useScrollActive";
+import { useSection } from "@context/section";
+import useOnScreen from "@hooks/useOnScreen";
+import useScrollActive from "@hooks/useScrollActive";
 
-import satNaing from "../../../public/satnaing.webp";
-import AboutBgSvg from "src/components/AboutBgSvg";
-import EduGroup from "src/components/EduGroup";
+import satNaing from "@public/satnaing.webp";
+import AboutBgSvg from "@components/AboutBgSvg";
+import EduGroup from "@components/EduGroup";
 
 const AboutSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

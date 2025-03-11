@@ -1,8 +1,8 @@
 'use client';
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
-import { ProvideFilter } from 'src/context/filter';
-import { ProvideSection } from 'src/context/section';
+import { ProvideFilter } from '@context/filter';
+import { ProvideSection } from '@context/section';
 import Script from 'next/script';
 import gsap from 'gsap';
 import { useEffect, useRef } from 'react';

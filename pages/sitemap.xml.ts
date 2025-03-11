@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next";
-import { getAllPosts } from "src/utils/api";
-import slugify from "src/utils/slugify";
+import { getAllPosts } from "@utils/api";
+import slugify from "@utils/slugify";
 
 type Data = {
   slugs: (string | string[])[];

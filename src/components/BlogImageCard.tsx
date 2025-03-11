@@ -4,7 +4,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import DateTime from "src/components/DateTime";
+import DateTime from "@components/DateTime";
 
 type Props = {
   post: {

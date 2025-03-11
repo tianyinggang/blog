@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import gsap from "gsap";
 
-import useScrollListener from "src/hooks/useScrollListener";
-import { useSection } from "src/context/section";
+import useScrollListener from "@hooks/useScrollListener";
+import { useSection } from "@context/section";
 
 const navLinks = [
   {

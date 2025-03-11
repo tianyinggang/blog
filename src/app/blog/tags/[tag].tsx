@@ -2,13 +2,13 @@ import { useEffect, useRef } from "react";
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import gsap from "gsap";
 
-import AppHead from "src/components/AppHead";
-import SkipToMain from "src/components/SkipToMain";
-import SocialLinks from "src/components/SocialLinks";
-import BlogHeader from "src/components/blog/BlogHeader";
-import BlogCard from "src/components/BlogCard";
-import Footer from "src/components/Footer";
-import { getAllPosts, getAllTagPosts } from "src/utils/api";
+import AppHead from "@components/AppHead";
+import SkipToMain from "@components/SkipToMain";
+import SocialLinks from "@components/SocialLinks";
+import BlogHeader from "@components/blog/BlogHeader";
+import BlogCard from "@components/BlogCard";
+import Footer from "@components/Footer";
+import { getAllPosts, getAllTagPosts } from "@utils/api";
 import { MdxMeta } from "../posts/[slug]";
 
 type Props = {
