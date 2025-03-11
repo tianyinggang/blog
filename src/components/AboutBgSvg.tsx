@@ -1,5 +1,5 @@
 import Image from "next/image";
-import dots from "";
+import dots from "@public/extra/dots.svg";
 import dotsDark from "@public/extra/dots-dark.svg";
 import arrow from "@public/extra/arrow.svg";
 
