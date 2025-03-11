@@ -27,7 +27,7 @@ const HeadCategory: React.FC<Props> = ({ category }) => {
       <Link
         href={slug ? `/blog/categories/${slug}` : "uncategorized"}
         className="hover:text-marrsgreen dark:hover:text-carrigreen font-medium outline-marrsgreen dark:outline-carrigreen"
-      >
+        legacyBehavior>
         {category ? category : "uncategorized"}
       </Link>
     </span>

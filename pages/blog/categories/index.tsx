@@ -80,7 +80,7 @@ const Blog: NextPage<Props> = ({ categories, categorizedPosts }) => {
                   <Link
                     href={`/blog/categories/${slugify(category)}`}
                     className="inline-block link-outline"
-                  >
+                    legacyBehavior>
                     <h2 className="category-title overflow-hidden text-xl font-medium pl-2 border-l-4 hover:text-marrsgreen dark:hover:text-carrigreen border-marrsgreen dark:border-carrigreen">
                       <span className="category-title-text inline-block">
                         {category}

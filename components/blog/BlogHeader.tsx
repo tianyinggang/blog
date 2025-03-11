@@ -40,7 +40,7 @@ const BlogHeader: React.FC = () => {
           <Link
             href="/blog"
             className="after:content-['blog'] after:bg-bgdark dark:after:bg-bglight after:text-cardlight dark:after:text-bgdark after:text-base after:px-2 after:inline-block after:rotate-12 after:absolute after:-right-12 hover:after:rotate-0 relative text-xl sm:text-2xl hover:text-marrsgreen dark:hover:text-carrigreen focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen"
-          >
+            legacyBehavior>
             SatNaing
             <span className="text-marrsgreen dark:text-carrigreen">.dev</span>
           </Link>
@@ -59,7 +59,7 @@ const BlogHeader: React.FC = () => {
                           router.pathname === navLink.url &&
                           "text-marrsgreen dark:text-carrigreen fill-marrsgreen dark:fill-carrigreen"
                         }`}
-                    >
+                      legacyBehavior>
                       <span className="md:hidden">{navLink.svg}</span>
                       <span className="whitespace-nowrap">{navLink.text}</span>
                     </Link>
