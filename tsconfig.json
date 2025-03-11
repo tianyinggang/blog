@@ -20,12 +20,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/sections/*": [
-        "src/components/sections/*"
-      ]
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@context/*": ["src/context/*"],
+      "@public/*": ["public/*"]
     },
     "plugins": [
       {
