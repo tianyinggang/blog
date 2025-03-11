@@ -1,6 +1,6 @@
 import { useState, useEffect, RefObject } from "react";
 
-export default function useScrollActive(ref: RefObject<HTMLElement>) {
+export default function useScrollActive(ref: RefObject<HTMLElement | null>) {
   const [state, setState] = useState(false);
 
   useEffect(() => {
