@@ -1,14 +1,11 @@
-// src/app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "../styles/globals.css"; // 导入全局 CSS
 import RootLayoutClient from "./layout.client"; // 引入客户端组件
 
 export const metadata: Metadata = {
   title: "Your Website Title",
   description: "Your website description",
-  viewport: "width=device-width, initial-scale=1",
   manifest: "/favicons/site.webmanifest",
-  themeColor: "#1d2a35",
   icons: {
     apple: "/favicons/apple-touch-icon.png",
     icon: [
@@ -25,9 +22,18 @@ export const metadata: Metadata = {
   },
 };
 
+// 移除 metadata 里的 viewport，改成单独导出
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+// themeColor 也需要单独导出
+export const themeColor = "#1d2a35";
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="light" style={{ colorScheme: 'light' }}>
+    <html lang="en" className="light" style={{ colorScheme: "light" }}>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
