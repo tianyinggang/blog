@@ -31,6 +31,13 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-[#b7b7b7] dark:bg-[#17222b];
   }
+  :root {
+    --primary-color: rgb(0, 122, 122); /* light mode color */
+  }
+  
+  .dark {
+    --primary-color: rgb(5, 206, 145); /* dark mode color */
+  }
 }
 
 @layer components {

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-//import { RoughNotation } from "react-rough-notation";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 
 import ProjectCard from "@components/ProjectCard";
@@ -17,9 +16,13 @@ import shadcnAdmin from "@public/projects/shadcn-admin.webp";
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();
+  // 添加 mounted 状态，确保只有在客户端挂载后再使用主题信息
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const sectionRef = useRef<HTMLDivElement>(null);
-
   const elementRef = useRef<HTMLDivElement>(null);
   const isOnScreen = useOnScreen(elementRef);
 
@@ -30,17 +33,29 @@ const ProjectSection: React.FC = () => {
     projectSection && onSectionChange!("projects");
   }, [onSectionChange, projectSection]);
 
+  // 根据 mounted 和主题确定下划线颜色
+  const themeColor = mounted
+    ? theme === "light"
+      ? "rgb(0, 122, 122)"
+      : "rgb(5 206 145)"
+    : "transparent";
+
   return (
     <section ref={sectionRef} id="projects" className="section">
       <div className="project-title text-center">
-        {/* <RoughNotation */}
-          type="underline"
-          color={`${theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"}`}
-          strokeWidth={2}
-          order={1}
-          show={isOnScreen}
+        {mounted ? (
+          <h2
+            className="section-heading"
+            style={{
+              borderBottom: `2px solid ${themeColor}`,
+              display: "inline-block",
+            }}
+          >
+            Featured Projects
+          </h2>
+        ) : (
           <h2 className="section-heading">Featured Projects</h2>
-        {/* </RoughNotation> */}
+        )}
       </div>
       <span className="project-desc text-center block mb-4" ref={elementRef}>
         “Talk is cheap. Show me the code”? I got you. <br />
@@ -96,7 +111,7 @@ const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "My portfolio website in terminal version developed with React and TypeScript. ",
+    desc: "My portfolio website in terminal version developed with React and TypeScript.",
     tags: ["React", "TypeScript", "Styled-Components"],
     liveUrl: "https://terminal.satnaing.dev/",
     codeUrl: "https://github.com/tianyinggang/terminal-portfolio",
@@ -154,7 +169,7 @@ const projects = [
       />
     ),
     desc: "An online bookstore developed using NextJS 13 with appDir and StrapiCMS.",
-    tags: ["NextJS", "Radix UI ", "TailwindCSS", "TanstackQuery", "StrapiCMS"],
+    tags: ["NextJS", "Radix UI", "TailwindCSS", "TanstackQuery", "StrapiCMS"],
     liveUrl: "https://nextbookstore.vercel.app/",
     codeUrl: "https://github.com/tianyinggang/next-bookstore",
     bgColor: "bg-[#EBF4F4]",

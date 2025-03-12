@@ -1,11 +1,13 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation"; // Changed from useRouter
 import { useTheme } from "next-themes";
 import useScrollListener from "../../hooks/useScrollListener";
 
 const BlogHeader: React.FC = () => {
-  const router = useRouter();
+  const pathname = usePathname(); // Changed from router
   const { theme, setTheme } = useTheme();
   const [navClassList, setNavClassList] = useState<any>([]);
   const scroll = useScrollListener();
@@ -56,7 +58,7 @@ const BlogHeader: React.FC = () => {
                       href={navLink.url}
                       className={`text-sm md:text-lg flex flex-col items-center w-[4.5rem] md:w-auto md:mr-6  dark:fill-textlight md:hover:text-marrsgreen md:dark:hover:text-carrigreen link-outline
                         ${
-                          router.pathname === navLink.url &&
+                          pathname === navLink.url &&
                           "text-marrsgreen dark:text-carrigreen fill-marrsgreen dark:fill-carrigreen"
                         }`}
                       >

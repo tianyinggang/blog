@@ -1,5 +1,4 @@
-import { useEffect, useRef } from "react";
-//import { RoughNotation } from "react-rough-notation";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 
 import LinkButton from "@components/LinkButton";
@@ -9,6 +8,11 @@ import useScrollActive from "@hooks/useScrollActive";
 
 const ContactSection: React.FC = () => {
   const { theme } = useTheme();
+  // 添加 mounted 状态，确保只有在客户端挂载后再使用主题数据
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const sectionRef = useRef<HTMLDivElement>(null);
   const isSecOnScreen = useOnScreen(sectionRef);
@@ -16,12 +20,12 @@ const ContactSection: React.FC = () => {
   const elementRef = useRef<HTMLDivElement>(null);
   const isOnScreen = useOnScreen(elementRef);
 
-  // Set active link for contact section
+  // 设置激活的导航链接
   const contactSection = useScrollActive(sectionRef);
   const { onSectionChange } = useSection();
   useEffect(() => {
-    contactSection && onSectionChange!("contact");
-  }, [contactSection]);
+    if (contactSection) onSectionChange("contact");
+  }, [contactSection, onSectionChange]);
 
   return (
     <section
@@ -30,15 +34,22 @@ const ContactSection: React.FC = () => {
       className="section min-h-[700px] text-center"
     >
       <div className="text-center">
-        {/* <RoughNotation */}
-          type="underline"
-          color={`${theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"}`}
-          strokeWidth={2}
-          order={1}
-          show={isOnScreen}
-        
-          <h2 className="text-2xl inline-block my-6 font-medium">Contact</h2>
-        {/* </RoughNotation> */}
+        {mounted ? (
+          <h2
+            className="text-2xl inline-block my-6 font-medium"
+            style={{
+              borderBottom: `2px solid ${
+                theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"
+              }`,
+            }}
+          >
+            Contact
+          </h2>
+        ) : (
+          <h2 className="text-2xl inline-block my-6 font-medium">
+            Contact
+          </h2>
+        )}
       </div>
       <div className="mt-8 mb-20">
         <h3 className="font-medium text-lg mb-2 md:text-3xl" ref={elementRef}>

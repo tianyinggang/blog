@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import LinkButton from "../LinkButton";
-import satNaing from "@public/satnaing.webp";
+import satNaing from "@public/satnaing-illustration.webp";
 import laptop from "@public/laptop-illustration.webp";
 
 const HeroSection: React.FC = () => {

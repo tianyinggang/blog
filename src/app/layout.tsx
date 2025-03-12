@@ -1,6 +1,6 @@
-// ❌ 这里不要 `use client`，否则会报错
+// src/app/layout.tsx
 import type { Metadata } from "next";
-import "../styles/globals.css"; // 依然可以导入全局 CSS
+import "../styles/globals.css"; // 导入全局 CSS
 import RootLayoutClient from "./layout.client"; // 引入客户端组件
 
 export const metadata: Metadata = {
@@ -26,5 +26,17 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <RootLayoutClient>{children}</RootLayoutClient>;
+  return (
+    <html lang="en" className="light" style={{ colorScheme: 'light' }}>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-bglight dark:bg-bgdark">
+        <RootLayoutClient>{children}</RootLayoutClient>
+      </body>
+    </html>
+  );
 }
