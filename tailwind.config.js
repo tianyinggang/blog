@@ -1,10 +1,10 @@
 module.exports = {
   darkMode: "class",
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./sections/**/*.{js,ts,jsx,tsx}",
-  ],
+    "./src/**/*.{js,ts,jsx,tsx}",   // 扫描 src 目录中的所有 JavaScript 和 TypeScript 文件
+    "./contents/**/*.{md,mdx}",      // 扫描 contents 目录中的 Markdown 文件
+    "./public/**/*.{webp,png,jpg,svg}"  // 扫描 public 目录中的图片文件，可以根据需要增加其他格式
+  ],  
   theme: {
     screens: {
       xs: "480px",
@@ -45,6 +45,5 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
   ],
 };
